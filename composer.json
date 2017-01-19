@@ -1,0 +1,18 @@
+{
+    "name": "Release Profiles",
+    "description": "A Wordpress custom post type to represent releases by a record label",
+    "type": "library",
+    "license": "X11 License",
+    "keywords": [
+        "csn"
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "KP\\": "libraries/kpress/src/KP"
+       }
+    }
+}
