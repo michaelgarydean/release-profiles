@@ -33,6 +33,11 @@
     $release_post_type = new KP_Custom_Post_Type( 'Releases' );
     $release_post_type->set_slug( 'releases' );
     
+    
+    //Define post type for customizing RSS feeds
+    $artist_post_type = new KP_Custom_Post_Type( 'Artists' );
+    $artist_post_type->set_slug( 'artists' );
+    
     /**
      * ====================================================
      * Set up metaboxes.
@@ -45,4 +50,5 @@
     $release_details = new KP_Metabox( "Release details" );
     
     $release_details->add_field( "Artist" );
+    $release_details->add_field( "Release Date" );
     $release_post_type->add_metabox( $release_details, "advanced", "high" );
